@@ -5,7 +5,7 @@
   "main": "parse.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "./node_modules/babel-cli/bin/babel-node.js  --presets es2015 ./index.js"
+    "example": "./node_modules/babel-cli/bin/babel-node.js  --presets es2015 ./example.js"
   },
   "keywords": [],
   "author": "",
