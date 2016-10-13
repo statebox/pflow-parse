@@ -1,0 +1,19 @@
+{
+  "name": "parse-pflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "./node_modules/babel-cli/bin/babel-node.js  --presets es2015 ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "ramda": "^0.22.1",
+    "xml2js": "^0.4.17"
+  }
+}
