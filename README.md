@@ -1,4 +1,4 @@
-quick and dirty parser for .pflow files
+quick and dirty parser for .pflow files http://www.pneditor.org/
 
 to run under node
 
