@@ -1,12 +1,12 @@
-import {parseString} from 'xml2js'
-import R from 'ramda'
+const parseString = require('xml2js').parseString
+const R = require('ramda')
 
 const maphead = R.map(R.head)
 const heads = R.compose(maphead, R.head)
 const iMap = R.addIndex(R.map)
 
 const squash = R.compose(
-	xs => iMap((x,i) => R.assoc('i', i, xs[x]), R.keys(xs)),
+	xs => iMap((x, i) => R.assoc('i', i, xs[x]), R.keys(xs)),
 	xs => R.map(heads, R.groupBy(R.prop('id'), xs))
 )
 
@@ -77,7 +77,8 @@ function reshape (net) {
 	}
 }
 
-export default function loadNet ( pflowFile , callback ) {
+
+module.exports = function loadNet ( pflowFile , callback ) {
 	parseString(pflowFile, function (err, result) {
 		if (err) {
 			callback(err)
